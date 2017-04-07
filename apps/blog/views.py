@@ -35,9 +35,10 @@ def youcodegirl(request):
 
     return render(request, 'blog/posts/thegrind/youcodegirl.html')
 
-def austinfoodietrip(request):
+def myphotographystory(request):
 
-    return render(request, 'blog/posts/lifestyle/austinfoodietrip.html')
+    return render(request, 'blog/posts/thegrind/myphotographystory.html')
+    
 
 def fitnessstorypt1(request):
 

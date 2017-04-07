@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="The Jennuine Life is the hub of all things Jennifer Cortes, a freelance web designer amp&; lifestyle photographer and blogger based out of Frisco, TX. The Jennuine Life is a way for me to share not only my design and photography work, but my love for fitness, food, travel, reading, and the genuine life I live.">
+	<meta name="author" content="Jennifer Cortes">
+	<meta name="keywords" content="photographer, web designer, graphic designer, freelancer, lifestyle, blog, blogger, foodie, fitness, health, jennuinelife, photography, portraits, developer, coder">
+
+	<title>The Jennuine Life | Blog</title>
+	{% load static %}
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="{% static 'website/bootstrap/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/simpletextrotator.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/et-line-font.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/magnific-popup.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/flexslider.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/animate.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/custom.css' %}">
+
+
+</head>
+<body>
+
+	<!-- PRELOADER -->
+	<div class="page-loader">
+		<div class="loader">Loading...</div>
+	</div>
+	<!-- /PRELOADER -->
+
+	<!-- NAVIGATION -->
+	<nav class="navbar navbar-custom navbar-transparent navbar-fixed-top" >
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">The Jennuine Life</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="custom-collapse">
+
+				<ul class="nav navbar-nav navbar-right">
+
+					<li>
+						<a href="/">Home</a>
+					</li>
+					<li>
+						<a href="../../about">About</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
+						<ul class="dropdown-menu" role="menu">
+							<li>
+								<a href="../../photography">Photography</a>
+							</li>
+							<li>
+								<a href="../../design">Web &amp; Branding</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="../../blog">Blog</a>
+					</li>
+					<li>
+						<a href="../../contact">Contact</a>
+					</li>
+
+				</ul>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- /NAVIGATION -->
+
+	<!-- WRAPPER -->
+	<div class="wrapper">
+
+		<!-- HOME -->
+		<div class="module module-header bg-dark bg-dark-50" data-background="assets/images/.jpg">
+
+			<div class="container">
+
+				<!-- MODULE TITLE -->
+				<div class="row">
+
+					<div class="col-sm-8 col-sm-offset-2">
+
+						<h1 class="module-title font-alt align-center">My Photography Story</h1>
+
+
+
+					</div>
+
+				</div>
+				<!-- /MODULE TITLE -->
+
+			</div>
+
+		</div  >
+		<!-- /HOME -->
+
+		<!-- BLOG SINGLE -->
+		<div class="module-small pdd-88-n">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-sm-8 col-sm-offset-2">
+
+						<!-- POST -->
+						<div class="post">
+
+							<div class="post-thumbnail">
+								<a href="{% url 'blog:myphotographystory'%}"><img src="{% static 'website/images/posts/thegrind/photography.jpg' %}"></a>
+							</div>
+
+							<div class="post-entry">
+
+								<p>Becoming a “photographer” (I still don’t feel comfortable calling myself that) happened by accident. It wasn’t something that I always had a passion for or dreamed of doing…it was something that happened to fall into my lap one evening and ended up turning into more.</p>
+
+								<p>In high school, I was both in Newspaper and in Yearbook. In Yearbook, I was mostly in charge of layout design and in Newspaper, writing content (with the occasional anchor role for a supppperrr cheesy and now looking back, HILARIOUS news segment we had.) One day, the person that was in charge of doing photos for a volleyball game for Newspaper couldn’t make it, so I had to fill in. I was handed a Nikon d3000 and off I went to capture a game that I would have typically just been a spectator for. I don’t remember how the pictures turned out (Probably SUPER crappy), but I do remember the feeling of capturing the pictures, and because of that, I volunteered to be the designated picture taker..</p>
+
+								<p>The teacher we had for Newspaper, Coach Shifflet, paid a HUGE role in me taking up photography. Not only did he allow me to be the one to document images for the paper, but he would let me check out the camera after school so that I could drive around the backroads of my tiny-ass town, taking pictures of anything and everything.</p>
+
+								<p>I didn’t take my first portrait until a few months later…it was of one my friends, Halie, who was so pretty that I knew that even if I did a terrible job taking the photos, she would redeem me. So off we went to our neighboring town and I took my first set of portraits.</p>
+
+								<div class="row">
+
+									<div class="col-sm-4 col-md-4 col-lg-4">
+										<img src="halie1.jpg">
+
+									</div>
+									<div class="col-sm-4 col-md-4 col-lg-4">
+										<img src="halie2.jpg">
+									</div>
+									<div class="col-sm-4 col-md-4 col-lg-4">
+										<img src="halie3.jpg">
+									</div>
+								</div>
+								<div class="row">
+
+									<div class="col-sm-12 col-md-12 col-lg-12">
+										<center><i>My first set of portraits, fall 2009</i></center>
+									</div>
+
+								</div>
+
+								<p>From there I began posting pictures of what I took, my friends started talking about it, and through word of mouth, people began asking to have their pictures taken. I was about to graduate high school though, which meant that I would be out of a camera. And this is where once again, Coach Shifflet came in…he made it possible for me to get my own Nikon d3000. I busted my ass that summer to repay him for the camera, but to this day, I don’t know how I will repay him for the jump start he gave me into something that now largely defines me. Shiffy, if you’re reading this…you know how much I value what is now a friendship, how much I look up to you, and I hope you know how eternally grateful I am to you.</p>
+
+								<p>Anyways, I continued to take pictures of everything I could, no matter how random, and to buy photography books, watch videos, and basically teach myself everything I could. I eventually upgraded my camera to Luna, the d700 that I have now, and continued to teach myself what shutter speed, composition, aperture, white balance, ISO, and countless other things meant.</p>
+
+								<p>In 2012, I launched Jennuine Photos. It was when I became “official” and got a FB page, website, business cards, tax id, etc. Every year since then, I have grown as a camera wielder, not only by continuing to learn about this craft and industry, but by being blessed to have photographed countless individuals, families, couples, etc. </p>
+
+								<p>I have loved looking back at my first first images and then looking at my current ones and seeing how I have evolved and how with each passing year, I see more of myself in the images I take. From the way I photograph to the way I edit, each passing year my images have become more and more me. I have learned something valuable from each and every session I have done and this year, as Jennuine Photos became part of The Jennuine Life, I look forward to continuing to continuing to grow and improve what I can do with this camera of mine.</p>
+
+								<p>To those that have supported me and my journey in this area of my genuine life, I thank you from the bottom of my heart. It has been a wonderful 5 official  years and I wouldn’t have been able to do it without you. Whether you rooted for me, booked me, referred me, liked my images on FB…you made this humble photography business happen just as much as me and my camera did.</p>
+								<br>
+								<br>
+								<br>
+								<p><i>I am not a full time photographer, as this is not my career path. I consider myself a dedicated hobby-ist and am so grateful to have people who seek me to capture their stories. If you're interested in a photosession, simply head over to the contact page and drop me a line! </i></p>
+
+								<center><h3>Okay Baiiii,<br>
+										Jenn</h3></center>
+
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div >
+		<!-- /BLOG SINGLE -->
+
+		<!-- DIVIDER -->
+		<hr class="divider-w">
+		<!-- /DIVIDER -->
+
+		<!-- CONTACT -->
+		<div class="module-small">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="module-title align-center font-alt">Check out my IG</h2>
+						<script src="https://snapwidget.com/js/snapwidget.js"></script>
+						<iframe src="https://snapwidget.com/embed/361632" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+					</div>
+			</div>
+
+		</div >
+		<!-- /CONTACT -->
+		<!-- FOOTER -->
+		<footer class="footer">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-sm-12 text-center">
+						<p class="copyright font-inc m-b-0">© 2017 <a href="index.html">The Jennuine Life</a>, All Rights Reserved.</p>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="content-box">
+								<div class="content-box-icon">
+									<a href="http://www.facebook.com/thejennuinelife" target="blank"><img src="{% static 'website/images/fb.png' %}" width="40px"/></a>
+									<a href="http://www.instagram.com/imjenncortes" target="blank"><img src="{% static 'website/images/ig.png' %}" width="40px"/></a>
+									<a href="http://www.twitter.com/imjenncortes" target="blank"><img src="{% static 'website/images/twitter.png' %}" width="40px"/></a>
+
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+	</div>
+	<!-- /WRAPPER -->
+
+	<!-- Scroll-up -->
+	<div class="scroll-up">
+		<a href="#totop"><i class="fa fa-angle-double-up"></i></a>
+	</div>
+
+	<!-- Javascript files -->
+	<script src="{% static 'website/js/jquery-2.2.4.min.js' %}"></script>
+	<script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'website/js/appear.js' %}"></script>
+	<script src="{% static 'website/js/jquery.simple-text-rotator.min.js' %}"></script>
+	<script src="{% static 'website/js/jqBootstrapValidation.js' %}"></script>
+	<script src="{% static 'website/js/isotope.pkgd.min.js' %}"></script>
+	<script src="{% static 'website/js/imagesloaded.pkgd.js' %}"></script>
+	<script src="{% static 'website/js/jquery.flexslider-min.js' %}"></script>
+	<script src="{% static 'website/js/jquery.magnific-popup.min.jss' %}"></script>
+	<script src="{% static 'website/js/jquery.fitvids.js' %}"></script>
+	<script src="{% static 'website/js/smoothscroll.js' %}"></script>
+	<script src="{% static 'website/js/smoothscroll.js' %}"></script>
+	<script src="{% static 'website/js/wow.min.js' %}"></script>
+	<script src="{% static 'website/js/smoothscroll.js' %}"></script>
+	<script src="{% static 'website/js/contact.js' %}"></script>
+	<script src="{% static 'website/js/smoothscroll.js' %}"></script>
+	<script src="{% static 'website/js/custom.js' %}"></script>
+	</body>
+
+	</html>
