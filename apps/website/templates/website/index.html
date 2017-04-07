@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="The Jennuine Life is the hub of all things Jennifer Cortes, a freelance web designer amp&; lifestyle photographer and blogger based out of Frisco, TX. The Jennuine Life is a way for me to share not only my design and photography work, but my love for fitness, food, travel, reading, and the genuine life I live.">
+	<meta name="author" content="Jennifer Cortes">
+	<meta name="keywords" content="photographer, web designer, graphic designer, freelancer, lifestyle, blog, blogger, foodie, fitness, health, jennuinelife, photography, portraits, developer, coder">
+
+	<title>The Jennuine Life | Home</title>
+	{% load static %}
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="{% static 'website/bootstrap/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/simpletextrotator.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/et-line-font.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/magnific-popup.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/flexslider.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/animate.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/custom.css' %}">
+
+
+</head>
+<body>
+
+	<!-- PRELOADER -->
+	<div class="page-loader">
+		<div class="loader">Loading...</div>
+	</div>
+
+	<!-- /PRELOADER -->
+
+	<!-- NAVIGATION -->
+	<nav class="navbar navbar-custom navbar-transparent navbar-fixed-top" >
+
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">The Jennuine Life</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="custom-collapse">
+
+					<ul class="nav navbar-nav navbar-right">
+
+						<li>
+						<a href="{% url 'website:index'%}">Home</a>
+						</li>
+						<li>
+							<a href="{% url 'website:about'%}">About</a>
+						</li>
+						<li class="dropdown">
+							<a href="" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="{% url 'website:photography'%}">Photography</a>
+								</li>
+								<li>
+									<a href="{% url 'website:design'%}">Web &amp; Branding</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="{% url 'blog:index'%}">Blog</a>
+						</li>
+						<li>
+							<a href="{% url 'website:contact'%}">Contact</a>
+						</li>
+
+					</ul>
+				</div>
+
+			</div>
+
+	</nav>
+	<!-- /NAVIGATION -->
+
+	<!-- HOME -->
+	<div id="home" class="module-hero module-parallax module-fade module-full-height bg-dark-30" data-background="{% static 'website/images/homeheader.jpg' %}">
+
+		<div class="hs-caption container">
+			<div class="caption-content">
+				<div class="hs-title-size-4 font-alt m-b-30">
+					Hi There!
+				</div>
+				<div class="hs-title-size-1 font-inc">
+					I'm Jennifer Cortes | Colombian, Photographer, Coder, Designer,<br> Harry Potter lover, fur mom, donut connoisseur, and future world traveler.
+				</div>
+			</div>
+		</div>
+
+	</div  >
+	<!-- /HOME -->
+
+	<!-- WRAPPER -->
+	<div class="wrapper">
+
+		<!-- PORTFOLIO -->
+
+
+				<!-- PORTFOLIO FILTER -->
+
+		<!-- /PORTFOLIO -->
+
+		<!-- TESTIMONIAL -->
+		<div class="module-small testimonial_home ">
+			<div class="container">
+				<div class="row">
+					<!-- MODULE TITLE -->
+					<div class="col-sm-6">
+						<h2 class="module-title font-alt"></h2>
+					</div>
+					<!-- /MODULE TITLE -->
+
+					<!-- BLOCKQUOTE -->
+					<div class="col-sm-6">
+						<blockquote class="font-serif align-right">
+							<p>“It is our choices that show what we truly are, far more than our abilities.”</p>
+							<p class="font-inc font-uppercase">- Albus Dumbledore</p>
+						</blockquote>
+					</div>
+					<!-- /BLOCKQUOTE -->
+				</div>
+			</div>
+		</div >
+		<!-- /TESTIMONIAL -->
+
+		<div class="module p-b-0 home_blog_area">
+
+			<div class="container">
+
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3">
+						<h2 class="module-title align-center font-alt"><img src="{% static 'website/images/tjllogo.png' %}"></a></h2>
+						<h2 class="module-title align-center font-alt">What Da F Is<br> The Jennuine Life?</h2>
+
+						<div class="module-subtitle align-center font-inc">
+							The Jennuine Life is the home of an always hungry, dreaming, wanderlust-ing, fitnessing, genuine hearted Jennifer Cortes, AKA, ME.
+							<br>
+							<br>
+							Here, you will find my portfolios for design and photography and you'll also get to read my blog, which just a heads up, will probably be raaaaandom...and very much ME. I'll be talking about random life things, coding, fitness/nutrition, and whatever else pops into my brain
+							<br>
+							<br>
+							The Jennuine Life is a name and idea that was born years ago, but has taken time to develop...after all, I didn't really know how to get all of <u>ME</u> out there in a somewhat organized manner. But finally, I said "Fuck It" (Yes, I say bad words. Sorry not sorry) and decided to just put it all here, just as it all is and just as I am, because after all, it wouldn't be too genuine if I didn't, huh?
+							<br>
+							<br>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div >
+
+		<!-- WHAT I DO -->
+		<div class="module">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3">
+						<h2 class="module-title align-center font-alt">What I Do</h2>
+						<div class="module-subtitle align-center font-inc">
+							I have always been a bit all over the place and have always been referred to as a Jack Of All Trades. I love far too many things and tend to eat with my eyes...meaning that my plate is constantly full. I call it being hobby diverse...and I love it.
+						</div>
+					</div>
+				</div>
+				<!-- /MODULE TITLE -->
+				<div class="row multi-columns-row">
+
+					<div class="col-sm-6 col-md-3 col-lg-3">
+						<div class="content-box">
+							<div class="content-box-icon">
+								<span class="icon-camera"></span>
+							</div>
+							<div class="content-box-title font-inc font-uppercase">
+								Photography
+							</div>
+							<div class="content-box-text">
+								I use my Nikon named "Luna" to capture lifestyle images of couples, families, kiddos, individuals, food, and of course, Nargles.
+							</div>
+						</div>
+					</div>
+
+					<!-- CONTENT BOX -->
+					<div class="col-sm-6 col-md-3 col-lg-3">
+						<div class="content-box">
+							<div class="content-box-icon">
+								<span class="icon-tools"></span>
+							</div>
+							<div class="content-box-title font-inc font-uppercase">
+								Design
+							</div>
+							<div class="content-box-text">
+								Logos, business cards, graphics...whatever your brand or design needs might be, no worries,  I gotchu.
+							</div>
+						</div>
+					</div>
+					<!-- /CONTENT BOX -->
+					<div class="col-sm-6 col-md-3 col-lg-3">
+						<div class="content-box">
+							<div class="content-box-icon">
+								<span class="icon-global"></span>
+							</div>
+							<div class="content-box-title font-inc font-uppercase">
+								Web
+							</div>
+							<div class="content-box-text">
+								Do you need a Blog, online store, simple site, or a landing page? Cool. Let's work together to get you on dat www.
+							</div>
+						</div>
+					</div>
+					<!-- /CONTENT BOX -->
+					<div class="col-sm-6 col-md-3 col-lg-3">
+						<div class="content-box">
+							<div class="content-box-icon">
+								<span class="icon-laptop"></span>
+							</div>
+							<div class="content-box-title font-inc font-uppercase">
+								Coding
+							</div>
+							<div class="content-box-text">
+								I may not be a Parseltongue, but I do  know Python(; I spend most of my day trying to debug code and build cool things.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div >
+		<!-- WHAT I DO-->
+
+		<!-- Home Blog -->
+		<div class="module p-b-0 home_blog_area">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="module-title align-center font-alt">Latest From Le Blog</h2>
+					</div>
+				</div>
+				<div class="row multi-columns-row post-columns">
+					<div class="col-sm-4 col-md-4 col-lg-4">
+						<div class="post">
+							<div class="post-thumbnail">
+								<a href="{% url 'blog:austinfoodietrip'%}"><img src="{% static 'website/images/posts/lifestyle/donuts.jpg' %}"></a>
+							</div>
+							<div class="post-header">
+								<h2 class="post-title font-alt"><a href="{% url 'blog:austinfoodietrip'%}">Austin Foodie Trip | Pt 1</a></h2>
+								<div class="post-meta font-inc">
+									By <a href="#">Jennifer Cortes</a> | APRIL 1 2017
+								</div>
+							</div>
+							<div class="post-entry">
+								<p>There are few things that I love more that food or a good challenge. At the beginning of February I got the chance to put the two together to see just how many restaurants one of my besties and I could eat at in one weekend in Austin, we went balls to the wall...</p>
+							</div>
+							<div class="post-more font-inc">
+								<a href="{% url 'blog:austinfoodietrip'%}" class="more-link">Read more</a>
+							</div>
+						</div>
+					</div>
+					<!-- /POST ITEM -->
+					<div class="col-sm-4 col-md-4 col-lg-4">
+						<div class="post">
+							<div class="post-thumbnail">
+							<a href="{% url 'blog:youcodegirl'%}"><img src="{% static 'website/images/posts/thegrind/coding.jpg' %}"></a>
+							</div>
+							<div class="post-header">
+								<h2 class="post-title font-alt"><a href="{% url 'blog:youcodegirl'%}">You Code, Girl!</a></h2>
+								<div class="post-meta font-inc">
+									By <a href="#">Jennifer Cortes</a> | APRIL 1 2017
+								</div>
+							</div>
+							<div class="post-entry">
+								<p>I remember the first time I saw someone coding. My first thought was "uh, that looks hella boring" and my second thought was "wtf does all of that mean?".  Flash forward 5 years and here I am, thinking code is the titties, and telling you to start too.</p>
+							</div>
+							<div class="post-more font-inc">
+								<a href="{% url 'blog:youcodegirl'%}" class="more-link">Read more</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- POST ITEM -->
+					<div class="col-sm-4 col-md-4 col-lg-4">
+						<div class="post">
+							<div class="post-thumbnail">
+									<a href="{% url 'blog:fitnessstorypt1'%}"><img src="{% static 'website/images/posts/fitness/sneakers.jpg' %}"></a>
+							</div>
+							<div class="post-header">
+								<h2 class="post-title font-alt"><a href="{% url 'blog:fitnessstorypt1'%}">My Fitness Story | Pt 1</a></h2>
+								<div class="post-meta font-inc">
+									By <a href="#">Jennifer Cortes</a> | APRIL 1 2017
+								</div>
+							</div>
+							<div class="post-entry">
+								<p>It wasn't an epic, exciting, or Hallmark worthy start...it all started with me waking up one morning and not being able to remember when the last time was that I had broken a sweat or the last time I had gone a day without cheesy fiesta potatoes from Taco Bell...</p>
+							</div>
+							<div class="post-more font-inc">
+								<a href="{% url 'blog:fitnessstorypt1'%}" class="more-link">Read more</a>
+
+							</div>
+						</div>
+					</div>
+					<!-- /POST ITEM -->
+				</div>
+			</div>
+		</div >
+		<!--/ Home Blog -->
+
+		<!-- CONTACT -->
+		<br>
+		<br>
+		<div class="module-large">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2 class="module-title align-center font-alt">Check out my IG</h2>
+						<script src="https://snapwidget.com/js/snapwidget.js"></script>
+						<iframe src="https://snapwidget.com/embed/361632" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+				</div>
+			</div>
+		</div >
+		<!-- /CONTACT -->
+		<!-- FOOTER -->
+
+		<footer class="footer">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-sm-12 text-center">
+						<p class="copyright font-inc m-b-0">© 2017 <a href="index.html">The Jennuine Life</a>, All Rights Reserved.</p>
+
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="content-box">
+								<div class="content-box-icon">
+									<a href="http://www.facebook.com/thejennuinelife" target="blank"><img src="{% static 'website/images/fb.png' %}" width="40px"/></a>
+									<a href="http://www.instagram.com/imjenncortes" target="blank"><img src="{% static 'website/images/ig.png' %}" width="40px"/></a>
+									<a href="http://www.twitter.com/imjenncortes" target="blank"><img src="{% static 'website/images/twitter.png' %}" width="40px"/></a>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</footer>
+		<!-- /FOOTER -->
+
+	</div>
+	<!-- /WRAPPER -->
+
+	<!-- Scroll-up -->
+	<div class="scroll-up">
+		<a href="#totop"><i class="fa fa-angle-double-up"></i></a>
+	</div>
+
+	<!-- Javascript files -->
+	<script src="{% static 'website/js/jquery-2.2.4.min.js' %}"></script>
+	<script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'website/js/appear.js' %}"></script>
+	<script src="{% static 'website/js/jquery.simple-text-rotator.min.js' %}"></script>
+	<script src="{% static 'website/js/jqBootstrapValidation.js' %}"></script>
+	<script src="{% static 'website/js/isotope.pkgd.min.js' %}"></script>
+	<script src="{% static 'website/js/imagesloaded.pkgd.js' %}"></script>
+	<script src="{% static 'website/js/jquery.flexslider-min.js' %}"></script>
+	<script src="{% static 'website/js/jquery.magnific-popup.min.jss' %}"></script>
+	<script src="{% static 'website/js/jquery.fitvids.js' %}"></script>
+	<script src="{% static 'website/js/smoothscroll.js' %}"></script>
+	<script src="{% static 'website/js/smoothscroll.js' %}"></script>
+	<script src="{% static 'website/js/wow.min.js' %}"></script>
+	<script src="{% static 'website/js/smoothscroll.js' %}"></script>
+	<script src="{% static 'website/js/contact.js' %}"></script>
+	<script src="{% static 'website/js/smoothscroll.js' %}"></script>
+	<script src="{% static 'website/js/custom.js' %}"></script>
+
+</body>
+
+</html>

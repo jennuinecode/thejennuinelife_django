@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="The Jennuine Life is the hub of all things Jennifer Cortes, a freelance web designer amp&; lifestyle photographer and blogger based out of Frisco, TX. The Jennuine Life is a way for me to share not only my design and photography work, but my love for fitness, food, travel, reading, and the genuine life I live.">
+	<meta name="author" content="Jennifer Cortes">
+	<meta name="keywords" content="photographer, web designer, graphic designer, freelancer, lifestyle, blog, blogger, foodie, fitness, health, jennuinelife, photography, portraits, developer, coder">
+
+	<title>The Jennuine Life | Design</title>
+	{% load static %}
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="{% static 'website/bootstrap/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/simpletextrotator.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/et-line-font.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/magnific-popup.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/flexslider.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/animate.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/custom.css' %}">
+
+
+</head>
+<body>
+
+	<!-- PRELOADER -->
+	<div class="page-loader">
+		<div class="loader">Loading...</div>
+	</div>
+
+	<!-- /PRELOADER -->
+
+	<!-- NAVIGATION -->
+	<nav class="navbar navbar-custom navbar-transparent navbar-fixed-top" >
+
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">The Jennuine Life</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="custom-collapse">
+
+					<ul class="nav navbar-nav navbar-right">
+
+						<li>
+						<a href="{% url 'website:index'%}">Home</a>
+						</li>
+						<li>
+							<a href="{% url 'website:about'%}">About</a>
+						</li>
+						<li class="dropdown">
+							<a href="" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="{% url 'website:photography'%}">Photography</a>
+								</li>
+								<li>
+									<a href="{% url 'website:design'%}">Web &amp; Branding</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="{% url 'blog:index'%}">Blog</a>
+						</li>
+						<li>
+							<a href="{% url 'website:contact'%}">Contact</a>
+						</li>
+
+					</ul>
+				</div>
+
+			</div>
+
+	</nav>
+	<!-- /NAVIGATION -->
+
+	<!-- HOME -->
+	<div class="module module-header bg-dark bg-dark-50" data-background="{% static 'website/images/code.jpg' %}">
+		<div class="hs-caption container">
+			<div class="caption-content">
+				<div class="hs-title-size-4 font-alt m-b-30">
+					Web &amp; Branding
+				</div>
+			</div>
+		</div>
+	</div  >
+	<!-- /HOME -->
+	<br>
+	<br>
+	<!-- WRAPPER -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="module-title align-center font-alt">WELCOME TO THE DESIGN PORTFOLIO</h2>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<div class="module-subtitle align-center font-inc">
+					To start off, let me just clarify that I am NOT a graphic designer...I have no formal training in that art. What I believe I do have is a knack for Adobe, an eye for good looking things, a passion for creating things on my computer, and branding.
+					<br>
+					<br>
+					The type of logo design that I do is minimal, font/letter based design. If you're looking for someone to draw you a custom dolphin logo or something, I'm not your girl. If you're wanting something a little more simple, then we'll make a great team.
+					<br>
+					<br>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="module-subtitle align-center font-inc">
+					My true design skills come through web design and coding, which is what I am currently studying and plan on making my career. I love helping people create an online versin of themselves and their business that is a true representation of THEM, much like this site does for me.
+					<br>
+					<br>
+					As I continue to work on my site, I will continue adding my latest design and web projects, as well as linking to their live counterparts so you can see the websites I have built in action. Until then, I hope you enjoy browing what is currently on here.
+					<br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="module-subtitle align-center font-inc">
+						<p>If you're interested in working with me, please head over to the contact page and drop me a line. I would love to hear from you!</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="wrapper">
+		<!-- PORTFOLIO -->
+		<div class="module-small p-t-20 p-b-0 p-t-sm-0">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+
+						<ul id="filters" class="filter font-inc">
+							<li><a href="#" data-filter="*" class="current wow fadeInUp">All</a></li>
+							<li><a href="#" data-filter=".design" class="wow fadeInUp" data-wow-delay="0.4s">Design</a></li>
+							<li><a href="#" data-filter=".web" class="wow fadeInUp" data-wow-delay="0.8s">Web </a></li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+
+			<!-- PORTFOLIO LIST -->
+			<ul id="works-grid" class="works-grid works-grid-masonry works-grid-3 works-hover-w">
+
+				<!-- PORTFOLIO ITEM -->
+
+				<li class="work-item marketing design">
+					<!-- <a href="portfolio-single-1.html"> -->
+						<div class="work-image">
+							<img src="{% static 'website/images/design_portfolio/njcardboth.png' %}" alt="">
+						</div>
+						<div class="work-caption">
+							<h3 class="work-title font-alt">Business Card Design</h3>
+							<div class="work-descr font-inc">
+								Naty &amp; Jen
+							</div>
+						</div>
+					<!-- </a> -->
+				</li>
+				<!-- /PORTFOLIO ITEM -->
+
+				<!-- PORTFOLIO ITEM -->
+				<li class="work-item illustration web">
+					<!-- <a href="portfolio-single-1.html"> -->
+						<div class="work-image">
+							<img src="{% static 'website/images/design_portfolio/lvpr.jpg' %}" alt="">
+						</div>
+						<div class="work-caption">
+							<h3 class="work-title font-alt">Web Design</h3>
+							<div class="work-descr font-inc">
+								LVPR
+							</div>
+						</div>
+					<!-- </a> -->
+				</li>
+				<!-- /PORTFOLIO ITEM -->
+
+				<!-- PORTFOLIO ITEM -->
+				<li class="work-item marketing design">
+					<!-- <a href="portfolio-single-1.html"> -->
+						<div class="work-image">
+							<img src="{% static 'website/images/design_portfolio/tjlcard.png' %}" alt="">
+						</div>
+						<div class="work-caption">
+							<h3 class="work-title font-alt">Business Card Design</h3>
+							<div class="work-descr font-inc">
+								The Jennuine Life
+							</div>
+						</div>
+					<!-- </a> -->
+				</li>
+				<!-- /PORTFOLIO ITEM -->
+
+				<!-- PORTFOLIO ITEM -->
+				<li class="work-item marketing design">
+					<!-- <a href="portfolio-single-1.html"> -->
+						<div class="work-image">
+							<img src="{% static 'website/images/design_portfolio/njlogo.jpg' %}" alt="">
+						</div>
+						<div class="work-caption">
+							<h3 class="work-title font-alt">Logo Design</h3>
+							<div class="work-descr font-inc">
+								Naty &amp; Jenn
+							</div>
+						</div>
+					<!-- </a> -->
+				</li>
+				<!-- /PORTFOLIO ITEM -->
+
+				<!-- PORTFOLIO ITEM -->
+				<!-- <li class="work-item marketing photography">
+					<a href="portfolio-single-1.html">
+						<div class="work-image">
+							<img src="assets/images/work-4.jpg" alt="">
+						</div>
+						<div class="work-caption">
+							<h3 class="work-title font-alt">Business Card</h3>
+							<div class="work-descr font-inc">
+								Photography
+							</div>
+						</div>
+					</a>
+				</li> -->
+				<!-- /PORTFOLIO ITEM -->
+
+				<!-- PORTFOLIO ITEM -->
+				<li class="work-item illustration web">
+					<!-- <a href="portfolio-single-1.html"> -->
+						<div class="work-image">
+							<img src="{% static 'website/images/design_portfolio/mwfsite.jpg' %}" alt="">
+						</div>
+						<div class="work-caption">
+							<h3 class="work-title font-alt">Web Design</h3>
+							<div class="work-descr font-inc">
+								Marie Wold Fitness
+							</div>
+						</div>
+					<!-- </a> -->
+				</li>
+				<!-- /PORTFOLIO ITEM -->
+
+				<!-- PORTFOLIO ITEM -->
+				<li class="work-item marketing design">
+					<!-- <a href="portfolio-single-1.html"> -->
+						<div class="work-image">
+							<img src="{% static 'website/images/design_portfolio/hmflogo.jpg' %}" alt="">
+						</div>
+						<div class="work-caption">
+							<h3 class="work-title font-alt">Logo Design</h3>
+							<div class="work-descr font-inc">
+								Heidi Marie Fitness
+							</div>
+						</div>
+					<!-- </a> -->
+				</li>
+				<!-- /PORTFOLIO ITEM -->
+
+				<li class="work-item illustration design">
+					<!-- <a href="portfolio-single-1.html"> -->
+						<div class="work-image">
+
+							<img src="{% static 'website/images/design_portfolio/kcklogo.jpg' %}" alt="">
+						</div>
+						<div class="work-caption">
+							<h3 class="work-title font-alt">Logo Design</h3>
+							<div class="work-descr font-inc">
+								King Cozy Kitchen
+							</div>
+						</div>
+					<!-- </a> -->
+				</li>
+
+
+				<!-- PORTFOLIO ITEM -->
+				<li class="work-item illustration web">
+					<!-- <a href="portfolio-single-1.html"> -->
+						<div class="work-image">
+							<img src="{% static 'website/images/design_portfolio/bifsite.jpg' %}" alt="">
+						</div>
+						<div class="work-caption">
+							<h3 class="work-title font-alt">Web Design</h3>
+							<div class="work-descr font-inc">
+								Become It Fitness
+							</div>
+						</div>
+					<!-- </a> -->
+				</li>
+				<!-- /PORTFOLIO ITEM -->
+				<li class="work-item illustration web">
+					<!-- <a href="portfolio-single-1.html"> -->
+						<div class="work-image">
+
+							<img src="{% static 'website/images/design_portfolio/najsite.jpg' %}" alt="">
+						</div>
+						<div class="work-caption">
+							<h3 class="work-title font-alt">Web Design</h3>
+							<div class="work-descr font-inc">
+								Naty &amp; Jenn
+							</div>
+						</div>
+					<!-- </a> -->
+				</li>
+
+				<li class="work-item illustration design">
+					<!-- <a href="portfolio-single-1.html"> -->
+						<div class="work-image">
+
+							<img src="{% static 'website/images/design_portfolio/tjllogo.jpg' %}" alt="">
+						</div>
+						<div class="work-caption">
+							<h3 class="work-title font-alt">Logo Design</h3>
+							<div class="work-descr font-inc">
+								The Jennuine Life
+							</div>
+						</div>
+					<!-- </a> -->
+				</li>
+
+			</ul>
+			<!-- /PORTFOLIO LIST -->
+
+		</div >
+
+		<!-- /PORTFOLIO -->
+
+
+		<!-- CONTACT -->
+		<div class="module-small">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="module-title align-center font-alt">Check out my IG</h2>
+						<script src="https://snapwidget.com/js/snapwidget.js"></script>
+						<iframe src="https://snapwidget.com/embed/361632" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+					</div>
+			</div>
+
+		</div >
+		<!-- /CONTACT -->
+		<!-- FOOTER -->
+		<footer class="footer">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-sm-12 text-center">
+						<p class="copyright font-inc m-b-0">© 2017 <a href="index.html">The Jennuine Life</a>, All Rights Reserved.</p>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="content-box">
+								<div class="content-box-icon">
+									<a href="http://www.facebook.com/thejennuinelife" target="blank"><img src="{% static 'website/images/fb.png' %}" width="40px"/></a>
+									<a href="http://www.instagram.com/imjenncortes" target="blank"><img src="{% static 'website/images/ig.png' %}" width="40px"/></a>
+									<a href="http://www.twitter.com/imjenncortes" target="blank"><img src="{% static 'website/images/twitter.png' %}" width="40px"/></a>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</footer>
+		<!-- /FOOTER -->
+
+	</div>
+	<!-- /WRAPPER -->
+
+	<!-- Scroll-up -->
+	<div class="scroll-up">
+		<a href="#totop"><i class="fa fa-angle-double-up"></i></a>
+	</div>
+
+	<!-- Javascript files -->
+	<script src="{% static 'website/js/jquery-2.2.4.min.js' %}"></script>
+	<script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'website/js/appear.js' %}"></script>
+	<script src="{% static 'website/js/jquery.simple-text-rotator.min.js' %}"></script>
+	<script src="{% static 'website/js/jqBootstrapValidation.js' %}"></script>
+	<script src="{% static 'website/js/isotope.pkgd.min.js' %}"></script>
+	<script src="{% static 'website/js/imagesloaded.pkgd.js' %}"></script>
+	<script src="{% static 'website/js/jquery.flexslider-min.js' %}"></script>
+	<script src="{% static 'website/js/jquery.magnific-popup.min.jss' %}"></script>
+	<script src="{% static 'website/js/jquery.fitvids.js' %}"></script>
+	<script src="{% static 'website/js/smoothscroll.js' %}"></script>
+	<script src="{% static 'website/js/smoothscroll.js' %}"></script>
+	<script src="{% static 'website/js/wow.min.js' %}"></script>
+	<script src="{% static 'website/js/smoothscroll.js' %}"></script>
+	<script src="{% static 'website/js/contact.js' %}"></script>
+	<script src="{% static 'website/js/smoothscroll.js' %}"></script>
+	<script src="{% static 'website/js/custom.js' %}"></script>
+
+</body>
+
+</html>

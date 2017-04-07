@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="The Jennuine Life is the hub of all things Jennifer Cortes, a freelance web designer amp&; lifestyle photographer and blogger based out of Frisco, TX. The Jennuine Life is a way for me to share not only my design and photography work, but my love for fitness, food, travel, reading, and the genuine life I live.">
+	<meta name="author" content="Jennifer Cortes">
+	<meta name="keywords" content="photographer, web designer, graphic designer, freelancer, lifestyle, blog, blogger, foodie, fitness, health, jennuinelife, photography, portraits, developer, coder">
+
+	<title>The Jennuine Life | Blog</title>
+	{% load static %}
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="{% static 'website/bootstrap/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/simpletextrotator.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/et-line-font.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/magnific-popup.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/flexslider.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/animate.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/custom.css' %}">
+
+
+</head>
+<body>
+
+	<!-- PRELOADER -->
+	<div class="page-loader">
+		<div class="loader">Loading...</div>
+	</div>
+	<!-- /PRELOADER -->
+
+	<!-- NAVIGATION -->
+	<nav class="navbar navbar-custom navbar-transparent navbar-fixed-top" >
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">The Jennuine Life</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="custom-collapse">
+
+				<ul class="nav navbar-nav navbar-right">
+
+					<li>
+						<a href="/">Home</a>
+					</li>
+					<li>
+						<a href="../../about">About</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
+						<ul class="dropdown-menu" role="menu">
+							<li>
+								<a href="../../photography">Photography</a>
+							</li>
+							<li>
+								<a href="../../design">Web &amp; Branding</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="../../blog">Blog</a>
+					</li>
+					<li>
+						<a href="../../contact">Contact</a>
+					</li>
+
+				</ul>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- /NAVIGATION -->
+
+	<!-- WRAPPER -->
+	<div class="wrapper">
+
+		<!-- HOME -->
+		<div class="module module-header bg-dark bg-dark-50" data-background="assets/images/.jpg">
+
+			<div class="container">
+
+				<!-- MODULE TITLE -->
+				<div class="row">
+
+					<div class="col-sm-8 col-sm-offset-2">
+
+						<h1 class="module-title font-alt align-center">You Code, Girl</h1>
+
+
+
+					</div>
+
+				</div>
+				<!-- /MODULE TITLE -->
+
+			</div>
+
+		</div  >
+		<!-- /HOME -->
+
+		<!-- BLOG SINGLE -->
+		<div class="module-small pdd-88-n">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-sm-8 col-sm-offset-2">
+
+						<!-- POST -->
+						<div class="post">
+
+							<div class="post-thumbnail">
+								<a href="{% url 'blog:austinfoodietrip'%}"><img src="{% static 'website/images/posts/thegrind/coding.jpg' %}"></a>
+							</div>
+
+							<div class="post-entry">
+
+								<p>If you had asked me 2 years ago what I wanted to do with my life, I would have told you that professionally, I didn't know. I had lots of hobbiest that generated income, but when it came to a career, they weren't things that I wanted to pursue. I mean, I wasn't going to get a degree in photography or anything fitness related.</p>
+
+								<p>Being the people driven person that I am led me to work in a bunch of different industries. From food to healthcare, I had done it all. However, these were all simply jobs...things I did from Monday - Friday to pay my bills. I wasn't passionate about any of these things and the creative side of my personality was not being put to use, which left a void these jobs weren't filling.</p>
+
+								<p>After being let go from a job in the fitness industry (which was the closest I had gotten to being truly happy with what I was doing), I was a loss for what to do. My first instinct was to get a job ASAP, doing WHATEVER to pay my bills. Luckily, my boyfriend urged me to take the time to find something that I truly was passionate about and could see myself doing as not just a money generating hobby, but as a career. He recommended coding.</p>
+
+								<p><i>The first time a I had see anyone code in real life was about 5 years ago at church...My first thought was "uh, that looks hella boring" and my second thought was "wtf does all of that mean? I remember caring enough to ask, but not enough to actually want to listen to the answer because it was just NOT up my alley. After all, I was a creative person, and coding was all math-y and science-y, things that were NOT my strong suit. (Just ask my highschool friends)</i></p>
+
+								<p>So with that memory in mind, you can imagine my apprehensionn at Ani's suggestion. He has been coding since he was little, pulling apart computers, building robots, and all that jazz so I didn't see how coding could be something for both someone like him and like myself, who spend her childhood drawing, trying really hard to sing, playing guitar, taking pictures etc.</p>
+
+								<p>Despite my apprenhension, I gave coding a try. And my golly I fell in love with that shit. Now don't get me wrong, it was hard, technical, and required some math...things that would have typically made me go "NOPE". However, I discovered that coding is one of the most creative avenues I could have ever imagined. With code, you can literally build ANYTHING. You like photography? You can build a photo based application like Instagram. You like fitness/nutrition? You can build an application like My Fitness Pal? How about Harry Potter? Well, I'm currently building an online Hogwarts application for my portfolio where students can register for their house, classes, Quidditch, have message boards, etc. The point is, the possibilities are endless.</p>
+								<div class="row">
+
+									<div class="col-sm-6 col-md-6 col-lg-6">
+										<img src="{% static 'website/images/posts/thegrind/hogwarts1.jpg' %}">
+
+									</div>
+									<div class="col-sm-6 col-md-6 col-lg-6">
+										<img src="{% static 'website/images/posts/thegrind/hogwarts2.jpg' %}">
+									</div>
+								</div>
+								<div class="row">
+
+									<div class="col-sm-12 col-md-12 col-lg-12">
+										<center><i>These are two screenshots from the online Hogwarts application that I'm building as part of my portoflio.</i></center>
+									</div>
+
+								</div>
+								<br>
+								<br>
+
+								<p>If you've made it this far, the point is that the world of technology, specificaly coding in this post, is not what it seems from the outside. If you are someone like me, (female, creative, math hating, people loving, etc) chances are that you would never consider coding as a path for yourself. Technology is deemed a boy's club, but it's not because the boys posted a "NO GIRLS ALLOWED SIGN" at the door. It's because the majority of us women are either too intimidated or unaware of all the possibililties that this ALL INCLUSIVE club has to offer, therefore creating a self-fulfilling prophecy about the world of technology. </p>
+
+								<p>I am so grateful that I chose to persue entry to the coding club. It has been the hardest thing I have ever done, and though I am still green to this industry, I can honestly say that it is the best decision I have ever made. Within this industry and with this skill, I have found an avenue where I can build and create literally ANYTHING that my heart desires. You see this website you're on? Yeah, I CODED this. It's crazy to think that things like this website are the easiest things that you can build.</p>
+
+								<p>If you love design, creativity, are constantly wishing there was a way to do this or that, I recommend you look into coding. And if you're a girl who thinks that there's no way that this is for you...honey, there isn't an industry that wants you more than this one. Females are rare in this industry. It's a sad truth that I hope to convert to a falsehood. I hope to share my passion for development/coding, my projects, and anything else that will encourage girls to step outside of their comfort zones and code. </p>
+								<br>
+								<br>
+								<br>
+								<p><i>If you're interested in learning more about what coding is, entails, or want some free resources to begin exploring, please let me know! You can do this. Don't let anyone tell you you can't. You code, girl! </i></p>
+
+								<center><h3>Okay Baiiii,<br>
+										Jenn</h3></center>
+
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div >
+		<!-- /BLOG SINGLE -->
+
+		<!-- DIVIDER -->
+		<hr class="divider-w">
+		<!-- /DIVIDER -->
+
+		<!-- CONTACT -->
+		<div class="module-small">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="module-title align-center font-alt">Check out my IG</h2>
+						<script src="https://snapwidget.com/js/snapwidget.js"></script>
+						<iframe src="https://snapwidget.com/embed/361632" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+					</div>
+			</div>
+
+		</div >
+		<!-- /CONTACT -->
+		<!-- FOOTER -->
+		<footer class="footer">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-sm-12 text-center">
+						<p class="copyright font-inc m-b-0">© 2017 <a href="index.html">The Jennuine Life</a>, All Rights Reserved.</p>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="content-box">
+								<div class="content-box-icon">
+									<a href="http://www.facebook.com/thejennuinelife" target="blank"><img src="{% static 'website/images/fb.png' %}" width="40px"/></a>
+									<a href="http://www.instagram.com/imjenncortes" target="blank"><img src="{% static 'website/images/ig.png' %}" width="40px"/></a>
+									<a href="http://www.twitter.com/imjenncortes" target="blank"><img src="{% static 'website/images/twitter.png' %}" width="40px"/></a>
+
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+	</div>
+	<!-- /WRAPPER -->
+
+	<!-- Scroll-up -->
+	<div class="scroll-up">
+		<a href="#totop"><i class="fa fa-angle-double-up"></i></a>
+	</div>
+
+	<!-- Javascript files -->
+	<script src="{% static 'website/js/jquery-2.2.4.min.js' %}"></script>
+	<script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'website/js/appear.js' %}"></script>
+	<script src="{% static 'website/js/jquery.simple-text-rotator.min.js' %}"></script>
+	<script src="{% static 'website/js/jqBootstrapValidation.js' %}"></script>
+	<script src="{% static 'website/js/isotope.pkgd.min.js' %}"></script>
+	<script src="{% static 'website/js/imagesloaded.pkgd.js' %}"></script>
+	<script src="{% static 'website/js/jquery.flexslider-min.js' %}"></script>
+	<script src="{% static 'website/js/jquery.magnific-popup.min.jss' %}"></script>
+	<script src="{% static 'website/js/jquery.fitvids.js' %}"></script>
+	<script src="{% static 'website/js/smoothscroll.js' %}"></script>
+	<script src="{% static 'website/js/smoothscroll.js' %}"></script>
+	<script src="{% static 'website/js/wow.min.js' %}"></script>
+	<script src="{% static 'website/js/smoothscroll.js' %}"></script>
+	<script src="{% static 'website/js/contact.js' %}"></script>
+	<script src="{% static 'website/js/smoothscroll.js' %}"></script>
+	<script src="{% static 'website/js/custom.js' %}"></script>
+	</body>
+
+	</html>
