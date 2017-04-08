@@ -103,99 +103,106 @@
 		<!-- PORTFOLIO -->
 
 	<div class="module-small portfolio_area p-b-60">
-			<div class="container">
-				<!-- PORTFOLIO FILTER -->
-				<div class="row">
-					<div class="col-sm-12">
-						<ul id="filters" class="filter font-inc hidden-xs">
-							<li><a href="#" data-filter="*" class="current wow fadeInUp">All</a></li>
-							<li><a href="#" data-filter=".lifestyle" class="wow fadeInUp" data-wow-delay="0.2s">Lifestyle</a></li>
-							<li><a href="#" data-filter=".fitness" class="wow fadeInUp" data-wow-delay="0.4s">Fitness &amp; Nutrition</a></li>
-							<li><a href="#" data-filter=".work" class="wow fadeInUp" data-wow-delay="0.6s">The Grind</a></li>
-							<li><a href="#" data-filter=".other" class="wow fadeInUp" data-wow-delay="0.8s">Other</a></li>
-						</ul>
+		<div class="container">
+			<!-- PORTFOLIO FILTER -->
+			<div class="row">
+				<div class="col-sm-12 col-sm-12 col-sm-12">
+					<ul id="filters" class="filter font-inc">
+						<li><a href="#" data-filter="*" class="current wow fadeInUp">All</a></li>
+						<li><a href="#" data-filter=".lifestyle" class="wow fadeInUp" data-wow-delay="0.2s">Lifestyle</a></li>
+						<li><a href="#" data-filter=".fitness" class="wow fadeInUp" data-wow-delay="0.4s">Fitness &amp; Nutrition</a></li>
+						<li><a href="#" data-filter=".work" class="wow fadeInUp" data-wow-delay="0.6s">The Grind</a></li>
+						<li><a href="#" data-filter=".other" class="wow fadeInUp" data-wow-delay="0.8s">Other</a></li>
+					</ul>
 
-					</div>
 				</div>
-				<!-- /PORTFOLIO FILTER -->
-
-				<!-- PORTFOLIO LIST -->
-				<ul id="works-grid" class="works-grid works-grid-gut works-grid-3 works-hover-w">
-
-					<!-- PORTFOLIO ITEM -->
-					<li class="work-item illustration fitness">
-						<a href="{% url 'blog:fitnessstorypt1'%}">
-							<div class="post">
-								<div class="post-thumbnail">
-										<a href="{% url 'blog:fitnessstorypt1'%}"><img src="{% static 'website/images/posts/fitness/sneakers.jpg' %}"></a>
-								</div>
-								<div class="post-header">
-									<h2 class="post-title font-alt"><a href="{% url 'blog:fitnessstorypt1'%}">My Fitness Story | Pt 1</a></h2>
-									<div class="post-meta font-inc">
-										By <a href="{% url 'website:about'%}">Jennifer Cortes</a> | APRIL 1 2017
-									</div>
-								</div>
-								<div class="post-entry">
-									<p>It wasn't an epic, exciting, or Hallmark worthy start...it all started with me waking up one morning and not being able to remember when the last time was that I had broken a sweat or the last time I had gone a day without cheesy fiesta potatoes from Taco Bell...</p>
-								</div>
-								<div class="post-more font-inc">
-									<a href="{% url 'blog:fitnessstorypt1'%}" class="more-link">Read more</a>
-
-								</div>
-							</div>
-						</a>
-					</li>
-					<!-- /PORTFOLIO ITEM -->
-
-					<!-- PORTFOLIO ITEM -->
-					<li class="work-item illustration lifestyle">
-						<a href="posts/thegrind/myphotographystory">
-							<div class="post">
-								<div class="post-thumbnail">
-									<a href="{% url 'blog:myphotographystory'%}"><img src="{% static 'website/images/posts/thegrind/photography.jpg' %}"></a>
-								</div>
-								<div class="post-header">
-									<h2 class="post-title font-alt"><a href="{% url 'blog:myphotographystory'%}">My Photography Story</a></h2>
-									<div class="post-meta font-inc">
-										By <a href="#">Jennifer Cortes</a> | APRIL 1 2017
-									</div>
-								</div>
-								<div class="post-entry">
-									<p>Becoming a “photographer” happened by accident. It wasn’t something that I always had a passion for or dreamed of doing…it was something that happened to fall into my lap one evening and ended up turning into more...</p>
-								</div>
-								<div class="post-more font-inc">
-									<a href="{% url 'blog:myphotographystory'%}" class="more-link">Read more</a>
-								</div>
-							</div>
-						</a>
-					</li>
-					<!-- /PORTFOLIO ITEM -->
-
-					<!-- PORTFOLIO ITEM -->
-					<li class="work-item illustration work">
-						<a href="posts/thegrind/youcodegirl">
-							<div class="post">
-								<div class="post-thumbnail">
-								<a href="{% url 'blog:youcodegirl'%}"><img src="{% static 'website/images/posts/thegrind/coding.jpg' %}"></a>
-								</div>
-								<div class="post-header">
-									<h2 class="post-title font-alt"><a href="{% url 'blog:youcodegirl'%}">You Code, Girl!</a></h2>
-									<div class="post-meta font-inc">
-										By <a href="{% url 'website:about'%}">Jennifer Cortes</a> | APRIL 1 2017
-									</div>
-								</div>
-								<div class="post-entry">
-									<p>I remember the first time I saw someone coding. My first thought was "uh, that looks hella boring" and my second thought was "wtf does all of that mean?".  Flash forward 5 years and here I am, thinking code is the titties, and telling you to start too.</p>
-								</div>
-								<div class="post-more font-inc">
-									<a href="{% url 'blog:youcodegirl'%}" class="more-link">Read more</a>
-								</div>
-							</div>
-						</a>
-					</li>
-				</ul>
 			</div>
 		</div>
+			<!-- /PORTFOLIO FILTER -->
+
+			<!-- PORTFOLIO LIST -->
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-xs-12 col-md-12">
+						<ul id="works-grid" class="works-grid works-grid-gut works-grid-3 works-hover-w">
+
+							<!-- PORTFOLIO ITEM -->
+							<li class="work-item illustration fitness">
+								<a href="{% url 'blog:fitnessstorypt1'%}">
+									<div class="post">
+										<div class="post-thumbnail">
+												<a href="{% url 'blog:fitnessstorypt1'%}"><img src="{% static 'website/images/posts/fitness/sneakers.jpg' %}"></a>
+										</div>
+										<div class="post-header">
+											<h2 class="post-title font-alt"><a href="{% url 'blog:fitnessstorypt1'%}">My Fitness Story | Pt 1</a></h2>
+											<div class="post-meta font-inc">
+												By <a href="{% url 'website:about'%}">Jennifer Cortes</a> | APRIL 1 2017
+											</div>
+										</div>
+										<div class="post-entry">
+											<p>It wasn't an epic, exciting, or Hallmark worthy start...it all started with me waking up one morning and not being able to remember when the last time was that I had broken a sweat or the last time I had gone a day without cheesy fiesta potatoes from Taco Bell...</p>
+										</div>
+										<div class="post-more font-inc">
+											<a href="{% url 'blog:fitnessstorypt1'%}" class="more-link">Read more</a>
+
+										</div>
+									</div>
+								</a>
+							</li>
+							<!-- /PORTFOLIO ITEM -->
+
+							<!-- PORTFOLIO ITEM -->
+							<li class="work-item illustration lifestyle">
+								<a href="posts/thegrind/myphotographystory">
+									<div class="post">
+										<div class="post-thumbnail">
+											<a href="{% url 'blog:myphotographystory'%}"><img src="{% static 'website/images/posts/thegrind/photography.jpg' %}"></a>
+										</div>
+										<div class="post-header">
+											<h2 class="post-title font-alt"><a href="{% url 'blog:myphotographystory'%}">My Photography Story</a></h2>
+											<div class="post-meta font-inc">
+												By <a href="#">Jennifer Cortes</a> | APRIL 1 2017
+											</div>
+										</div>
+										<div class="post-entry">
+											<p>Becoming a “photographer” happened by accident. It wasn’t something that I always had a passion for or dreamed of doing…it was something that happened to fall into my lap one evening and ended up turning into more...</p>
+										</div>
+										<div class="post-more font-inc">
+											<a href="{% url 'blog:myphotographystory'%}" class="more-link">Read more</a>
+										</div>
+									</div>
+								</a>
+							</li>
+							<!-- /PORTFOLIO ITEM -->
+
+							<!-- PORTFOLIO ITEM -->
+							<li class="work-item illustration work">
+								<a href="posts/thegrind/youcodegirl">
+									<div class="post">
+										<div class="post-thumbnail">
+										<a href="{% url 'blog:youcodegirl'%}"><img src="{% static 'website/images/posts/thegrind/coding.jpg' %}"></a>
+										</div>
+										<div class="post-header">
+											<h2 class="post-title font-alt"><a href="{% url 'blog:youcodegirl'%}">You Code, Girl!</a></h2>
+											<div class="post-meta font-inc">
+												By <a href="{% url 'website:about'%}">Jennifer Cortes</a> | APRIL 1 2017
+											</div>
+										</div>
+										<div class="post-entry">
+											<p>I remember the first time I saw someone coding. My first thought was "uh, that looks hella boring" and my second thought was "wtf does all of that mean?".  Flash forward 5 years and here I am, thinking code is the titties, and telling you to start too.</p>
+										</div>
+										<div class="post-more font-inc">
+											<a href="{% url 'blog:youcodegirl'%}" class="more-link">Read more</a>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 		<!-- DIVIDER -->
