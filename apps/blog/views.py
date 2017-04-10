@@ -17,4 +17,4 @@ def myphotographystory(request):
 
 def fitnessstorypt1(request):
 
-        return render(request, 'blog/posts/fitness/fitnessstorypt1.html')
+    return render(request, 'blog/posts/fitness/fitnessstorypt1.html')
