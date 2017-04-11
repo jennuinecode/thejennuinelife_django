@@ -34,48 +34,52 @@
 
 	<!-- NAVIGATION -->
 	<nav class="navbar navbar-custom navbar-transparent navbar-fixed-top" >
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="index.html">The Jennuine Life</a>
+
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="{% url 'website:index'%}">The Jennuine Life</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="custom-collapse">
+
+					<ul class="nav navbar-nav navbar-right">
+
+						<li>
+						<a href="{% url 'website:index'%}">Home</a>
+						</li>
+						<li>
+							<a href="{% url 'website:about'%}">About</a>
+						</li>
+						<li class="dropdown">
+							<a href="" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="{% url 'website:photography'%}">Photography</a>
+								</li>
+								<li>
+									<a href="{% url 'website:design'%}">Web &amp; Branding</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="{% url 'blog:index'%}">Blog</a>
+						</li>
+						<li>
+							<a href="{% url 'website:contact'%}">Contact</a>
+						</li>
+
+					</ul>
+				</div>
+
 			</div>
 
-			<div class="collapse navbar-collapse" id="custom-collapse">
-
-				<ul class="nav navbar-nav navbar-right">
-
-					<li>
-						<a href="/">Home</a>
-					</li>
-					<li>
-						<a href="../../about">About</a>
-					</li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
-						<ul class="dropdown-menu" role="menu">
-							<li>
-								<a href="../../photography">Photography</a>
-							</li>
-							<li>
-								<a href="../../design">Web &amp; Branding</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="../../blog">Blog</a>
-					</li>
-					<li>
-						<a href="../../contact">Contact</a>
-					</li>
-
-				</ul>
-			</div>
-		</div>
 	</nav>
 	<!-- /NAVIGATION -->
 
